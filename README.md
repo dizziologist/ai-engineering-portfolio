@@ -21,12 +21,25 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+### 3. RAG Chatbot — Chat With Your Documents
+Upload PDFs and ask questions, getting answers grounded only in those documents. Uses Gemini embeddings to find the most relevant chunks of text, then Gemini generates an answer based only on that retrieved context — a real implementation of Retrieval-Augmented Generation (RAG), the same technique used in production AI systems.
+
+📂 [`rag-chatbot/`](./rag-chatbot)
+
+**Run it:**
+```bash
+cd rag-chatbot
+pip install -r requirements.txt
+streamlit run app.py
+```
+
 ## Tech Stack
 - Python
 - Google Gemini API (structured outputs)
 - Streamlit (web interface)
 - PyPDF2 (PDF parsing)
 - BeautifulSoup (web scraping)
+- NumPy (vector similarity for retrieval)
 
 ## About
 Built by Promise Lamola as part of a hands-on journey from no-code/low-code AI automation into writing AI-integrated Python applications.
